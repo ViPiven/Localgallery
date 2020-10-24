@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p>Upload your photos to the gallery</p>
+<div class="buttons">
+    <div>
+        <form enctype="multipart/form-data" method="post">
+            <p><div class="fileinputs">
+            <input id="load" type="file" multiple accept="image/*,image/jpeg" class="file">
+            <div class="fakefile">
+                <input type="button"  value="Load" class="input_load" id="input_load">
+            </div>
+        </div>
+        </form>
+    </div>
+    <input class="delete__btn" type="button" onclick="deletePhoto()" value="Delete">
+    <div class="fileinputs__change">
+        <input id="put" type="file" name="photo" multiple accept="image/*,image/jpeg">
+        <div class="fakefile__change">
+            <input type="button"  value="Change" class="input_change">
+        </div>
+    </div>
+    <div class="upload__link">
+        <a class="upload__btn" id="upload" href="#" type="button" onclick="uploadPhoto()">Upload</a>
+    </div>
+</div>
+<div id="gallery" class="container"></div>
+<div id="thumbnails" class="row"></div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<div class="caption-container">
+    <p id="caption"></p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

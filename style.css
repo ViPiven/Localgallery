@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    left: 740px;
+    z-index: 1;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-right: 792px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    display: none;
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+
+/* Load Btn */
+div.fileinputs {
+    position: relative;
+}
+
+div.fakefile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+input.file {
+    position: relative;
+    text-align: right;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+}
+
+.input_load {
+    color: #fff;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    vertical-align: middle;
+    width: 100px;
+}
+
+.delete__btn {
+    width: 100px;
+    color: #fff;
+    background-color: #dc3545;
+    border: 1px solid  #dc3545;
+}
+
+
+/* Change Btn */
+
+#put {
+    position: relative;
+    text-align: right;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+}
+
+.fileinputs__change {
+    position: relative;
+}
+
+div.fakefile__change {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.input_change {
+    width: 100px;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+
+
+/* Upload Btn */
+.upload__link {
+    width: 100px;
+    text-align: center;
+}
+
+.upload__btn {
+    display: block;
+    font-size: 14px;
+    color: #212529;
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+    margin-bottom: 20px;
+}
